@@ -36,13 +36,13 @@ function InputBox({ label, amount, onAmountChange, onCurrencyChange, currencyOpt
                     disabled={currencyDisable}
                 >
                     {currencyOptions.map((currency) => (
-                        <option key={currency} value={currency}>
-                            usd
+                        <option key={currency} value={currency} style={{ color: 'black' }}>
+                            {currency}
                         </option>
                     ))}
                 </select>
                 <option value="usd">
-                    usd
+
                 </option>
 
             </div>
@@ -51,4 +51,4 @@ function InputBox({ label, amount, onAmountChange, onCurrencyChange, currencyOpt
     )
 }
 
-export default InputBox
+export default InputBox;
